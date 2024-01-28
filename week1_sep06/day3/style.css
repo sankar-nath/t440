@@ -1,0 +1,19 @@
+h1
+{
+    color: blue;
+}
+
+.div1
+{
+    border: 3px solid black;
+    padding: 20px;
+}
+
+.div-child
+{
+    width: 50%;
+    float:left;
+    padding:20px;
+    border: 2px solid red;
+}
+

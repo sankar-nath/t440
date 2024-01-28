@@ -1,0 +1,24 @@
+body
+{
+    background-color: green;
+
+}
+h1
+{
+    color:blue;
+}
+/* here h1 is the child of main. only the child h1 of main will be selected */
+main>h1
+{
+    color:red;
+}
+/* here we only want the h1 inside secton to be cyan */
+section>h1
+{
+    color:cyan;
+}
+/* let's make all the ps in a section yellow */
+section>p
+{
+    color:yellow;
+}

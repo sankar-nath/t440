@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Catalog</title>
+    <style>
+        div {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid blue;
+            width: 50%;
+            text-transform: uppercase;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Course Catalog</h1>
+    {{!-- TODO: list of courses goes here --}}
+
+    {{#each results}}
+    <div class="courseList">
+        <p>Code: {{this.code}} </p>
+        <p>Title: {{this.title}} </p>
+
+        {{#if this.taughtBy}}
+        
+             <p>Instructor: {{this.taughtBy}} </p>
+        
+        {{else}}
+        
+            <p style="color:red;">This course does not have an instructor</p>
+        
+        {{/if}}
+        
+       
+    </div>
+    {{/each}}
+</body>
+
+</html>

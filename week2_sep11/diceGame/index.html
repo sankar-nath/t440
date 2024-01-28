@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+</head>
+
+<body>
+    <h2>Dice Game</h2>
+    <label>Enter a value between 1 and 6</label>
+    <input type="text" placeholder="1-6" id="inputNumber">
+    <button id="submit">Submit</button>
+    <script src="dicegame.js"></script>
+
+    <div id="output">
+        <table>
+            <tr>
+                <th>Player value</th>
+                <th>Computer value</th>
+            </tr>
+            <tr>
+            <td><p id="pvalue">PV</p></td>
+            <td><p id="cvalue">CV</p></td>
+            </tr>
+        </table>
+        Winner is: <p id="wvalue">winner</p>
+    </div>
+</body>
+
+</html>

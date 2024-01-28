@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mi_showNextPage"
+        android:orderInCategory="100"
+        android:title="Show Next page" />
+    <item
+        android:id="@+id/mi_addFruit"
+        android:orderInCategory="100"
+        android:title="Add Fruit" />
+    <item
+        android:id="@+id/mi_clearAllFruits"
+        android:orderInCategory="100"
+        android:title="Clear All Fruits" />
+</menu>

@@ -1,0 +1,90 @@
+body {
+    /* we are going to set margin to 0 to avoid any borders or white bars when we set a bg color or a bg image */
+    margin: 0px;
+    /* background-color: yellow; */
+    /* full page backgrounds */
+    /* background-image: url("https://www.apple.com/v/home/takeover/i/images/overview/announced/iphone-15-pro/iphone15_pro__e2m7nqh53cmu_large_2x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+main {
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    gap: 50px;
+    height: 60vh;
+    background-color: 737373;
+    /* vh stands for viewport height. now always this section will be 80% of the size of the SCREEN */
+    
+}
+
+img {
+    width: 150px;
+}
+
+div {
+    /* display:flex; */
+    flex-direction: row;
+        
+
+}
+
+/* this is the rightside form and links which need to be flex */
+.rightSide {
+    display: flex;
+    /* border: 2px solid magenta; */
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 2px dotted red;
+}
+
+.loginB {
+    color: white;
+    background-color: blue;
+    text-align: center;
+    display: block;
+}
+
+.CreateNewAccount {
+    color: white;
+    background-color: green;
+}
+
+.list1 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style-type: none;
+    /* border:2px solid blue; */
+    padding-left: 0px;
+    text-decoration: none;
+    width:80%;
+    margin: 0 auto;
+}
+
+.list2 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style-type: none;
+    /* border:2px solid blue; */
+    padding-left: 0px;
+    text-decoration: none;
+    width:80%;
+    margin: 0 auto;
+}
+
+li>a {
+    color: grey;
+    text-decoration: none;
+}
+
+li>a:hover {
+    text-decoration: underline;
+}

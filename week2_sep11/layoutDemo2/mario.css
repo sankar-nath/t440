@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap:20px;
+}
+
+p {
+    border: 1px solid blue;
+    padding: 20px;
+
+}
+
+img {
+    width: 150px;
+    border: 2px solid red;
+}
+
+div {
+    background-color: yellow;
+    display:flex;
+    flex-direction: row-reverse;
+    gap:10px;
+    
+}

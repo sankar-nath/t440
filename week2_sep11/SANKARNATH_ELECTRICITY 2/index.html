@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Student No: 101479090 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANKARNATH SURESH</title>
+    <link rel="stylesheet" href="./css/elec.css">
+
+</head>
+
+<body>
+    <!-- adding return false to prevent form from refreshing page on submit -->
+    <h1>Electricity Bill Generator</h1>
+    <form onsubmit="return false">
+        
+        <label for="onPeak">Enter your On-peak consumption in kwh</label>
+        <input type="text" id="onPeak">
+        <label for="offPeak">Enter your Off-peak consumption in kwh</label>
+        <input type="text" id="offPeak">
+        <label>Province of Residence</label>
+        <select name="province" id="province">
+            <option value="Ontario">Ontario</option>
+            <option value="British Columbia">British Columbia</option>
+        </select>
+        <button id="calculate">Calculate</button>
+    </form>
+    <div class="output">
+        <div class="container">
+            <div class="box" id="onpeakbox">
+
+                <p>ON PEAK USAGE</p>
+                <h2 id="onpeakusage">$ value</h2>
+                <p id="onpeakused">$ value</p>
+            </div>
+            <div class="box" id="offpeakbox">
+
+                <p>ON PEAK USAGE</p>
+                <h2 id="offpeakusage">$ value</h2>
+                <p id="offpeakused">$ value</p>
+
+            </div>
+        </div>
+        <div id="totalCharges"></div>
+        <div id="salesTax"></div>
+        <div id="provincialRebate"></div>
+        <div id="total"></div>
+    </div>
+
+
+
+
+
+    <script src="./js/elec.js"></script>
+</body>
+
+</html>

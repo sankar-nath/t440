@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+
+        .tracks {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form {
+            border: 2px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            width: 50vh;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        img {
+            max-width: 150px;
+            max-height: 200px;
+            /* Adjust the height as needed */
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h1 {
+            padding: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 20px;
+        }
+
+        ul li img {
+            max-width: 150px;
+            max-height: 200px;
+            /* Adjust the height as needed */
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Test profile</p>
+
+    <p>Name: {{user.name}} </p>
+
+    <p>Card Number: {{user.cardnumber}} </p>
+
+    <h2>Borrowed Books:</h2>
+    <ul>
+        {{#each borrowedBooks}}
+        <li>
+            <form action="/return/{{this.title}}" method="post" enctype="multipart/form-data">
+                <p>Title: {{this.title}}</p>
+                <p>Author: {{this.author}}</p>
+                <img src="/images/{{this.image}}" alt="{{this.title}}">
+                <button type="submit">Return</button>
+            </form>
+        </li>
+        {{/each}}
+    </ul>
+</body>
+
+</html>

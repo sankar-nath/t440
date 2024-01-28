@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        h3
+        {
+            color:red;
+        }
+        form
+        {
+            display: flex;
+            flex-direction: column;
+            width: 50vh;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    {{#if errorMsg}}
+    <h3>{{errorMsg}}</h3>
+    {{else}}
+    <h5>Please login below</h5>
+    {{/if}}
+    <form method="post" action="/login">
+        <label>Username</label><input name="username" type="text">
+        <label>Password</label><input name="password" type="password">
+        <select name="usertype">
+            <option value="Passenger">Passenger</option>
+             <option value="Driver">Driver</option>
+             </select>
+        <button type="submit">Login</button>
+
+        
+        </select>
+    </form>
+
+</body>
+
+</html>
